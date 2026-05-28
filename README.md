@@ -1,53 +1,68 @@
-# Análisis de Videojuegos: Identificando Patrones de Éxito en el Mercado Global
+# Video Game Analysis: Identifying Success Patterns in the Global Market
 
-Este proyecto analiza datos históricos de ventas de videojuegos para identificar patrones que determinan el éxito comercial, con el objetivo de orientar campañas publicitarias y estrategias de desarrollo.
+This project analyzes historical video game sales data to identify patterns that determine commercial success, with the goal of guiding advertising campaigns and development strategies.
 
-## Objetivo
+## Objective
 
-Identificar patrones que determinen el éxito de un videojuego mediante el análisis de ventas, plataformas populares, géneros rentables y diferencias regionales en preferencias de consumo.
+To identify patterns that determine the success of a video game through the analysis of sales, popular platforms, profitable genres, and regional differences in consumption preferences.
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
-*   **Python:** Lenguaje principal.
-*   **Pandas, NumPy:** Manipulación y análisis de datos.
-*   **Matplotlib, Seaborn:** Visualización de datos.
-*   **SciPy:** Pruebas de hipótesis estadísticas (prueba t de Student).
-*   **Jupyter Notebook:** Entorno de desarrollo interactivo.
+*   **Python:** Primary language.
+*   **Pandas, NumPy:** Data manipulation and analysis.
+*   **Matplotlib, Seaborn:** Data visualization.
+*   **SciPy:** Statistical hypothesis testing (Student's t-test).
+*   **Jupyter Notebook:** Interactive development environment.
 
 ## Dataset
 
-El conjunto de datos (`games.csv`) contiene información de más de 16,000 videojuegos lanzados hasta 2016, incluyendo nombre, plataforma, año de lanzamiento, género, ventas por región, puntuaciones de críticos y usuarios, y clasificación ESRB.
+The dataset (`games.csv`) contains information on more than 16,000 video games released up to 2016, including name, platform, release year, genre, sales by region, critic and user scores, and ESRB rating.
 
-## Pasos Clave del Análisis
+## Key Analysis Steps
 
-1.  **Preparación de los Datos:** Limpieza de valores ausentes, estandarización de formatos, creación de columna `total_sales` (suma de ventas regionales).
+1.  **Data Preparation:** Cleaning missing values, standardizing formats, creating a `total_sales` column (sum of regional sales).
 
-2.  **Análisis Exploratorio:** Visualización de lanzamientos por año, identificación de plataformas con mayores ventas totales (PS2, X360, PS3, Wii) y análisis de ciclos de vida de plataformas (6-10 años).
+2.  **Exploratory Analysis:** Visualization of releases by year, identification of platforms with the highest total sales (PS2, X360, PS3, Wii), and analysis of platform life cycles (6-10 years).
 
-3.  **Análisis del Mercado Actual (2012-2016):**
-    *   **Plataformas líderes:** PS4, PS3 y X360 dominan; Sony lidera el mercado, Nintendo tiene menor presencia.
-    *   **Distribución de ventas:** Boxplots muestran alta dispersión y valores atípicos (juegos muy exitosos) en todas las plataformas.
-    *   **Impacto de reseñas:** Correlación baja a moderada entre puntuaciones y ventas; las reseñas no son el único factor determinante.
-    *   **Rentabilidad por género:** Acción es el género más común, pero shooters y deportes son los más rentables por título.
+3.  **Current Market Analysis (2012-2016):**
+    *   **Leading platforms:** PS4, PS3, and X360 dominate; Sony leads the market, Nintendo has a smaller presence.
+    *   **Sales distribution:** Boxplots show high dispersion and outliers (very successful games) on all platforms.
+    *   **Impact of reviews:** Low to moderate correlation between scores and sales; reviews are not the only determining factor.
+    *   **Profitability by genre:** Action is the most common genre, but shooters and sports are the most profitable per title.
 
-4.  **Perfil del Usuario por Región:**
-    *   **NA y EU:** Dominan consolas de sobremesa (Xbox, PlayStation) y géneros de acción y deportes.
-    *   **Japón:** Preferencia por consolas portátiles (3DS, PSV) y juegos de rol.
+4.  **User Profile by Region:**
+    *   **NA and EU:** Dominated by home consoles (Xbox, PlayStation) and action and sports genres.
+    *   **Japan:** Preference for handheld consoles (3DS, PSV) and role-playing games.
 
-5.  **Pruebas de Hipótesis Estadísticas:**
-    *   **Hipótesis 1 (Xbox One vs. PC):** No hay diferencia significativa en calificaciones promedio de usuarios (p-value = 0.549).
-    *   **Hipótesis 2 (Acción vs. Deportes):** Existe diferencia significativa en calificaciones promedio (p-value < 0.05).
+5.  **Statistical Hypothesis Testing:**
+    *   **Hypothesis 1 (Xbox One vs. PC):** No significant difference in average user ratings (p-value = 0.549).
+    *   **Hypothesis 2 (Action vs. Sports):** Significant difference exists in average ratings (p-value < 0.05).
 
-## Resultados y Conclusiones
+## Results and Conclusions
 
-*   **Mercado dinámico:** Plataformas tienen ciclos de vida predecibles (6-10 años). Es crucial actualizarse con tendencias.
-*   **Dominio regional:** Sony lidera en NA y EU con consolas de sobremesa; Nintendo tiene mayor presencia en portátiles, especialmente en Japón.
-*   **Rentabilidad por género:** Shooters y deportes generan mayores ingresos por título, aunque acción es más común.
-*   **Factores de éxito:** Reseñas no son los únicos predictores; plataforma, género, región y marketing juegan un papel fundamental.
-*   **Estrategia recomendada:** Enfocar en plataformas líderes (PS4, XOne) y géneros de alto rendimiento (shooters, deportes) en mercados occidentales; considerar portátiles y juegos de rol en Japón.
+*   **Dynamic market:** Platforms have predictable life cycles (6-10 years). It is crucial to stay updated with trends.
+*   **Regional dominance:** Sony leads in NA and EU with home consoles; Nintendo has a greater presence in handhelds, especially in Japan.
+*   **Profitability by genre:** Shooters and sports generate higher revenue per title, although action is more common.
+*   **Success factors:** Reviews are not the only predictors; platform, genre, region, and marketing play a fundamental role.
+*   **Recommended strategy:** Focus on leading platforms (PS4, XOne) and high-performing genres (shooters, sports) in Western markets; consider handhelds and role-playing games in Japan.
 
-##  Cómo Ejecutar el Proyecto
+**How to Run the Project**
 
-1.  Clona el repositorio : (https://github.com/ferchi4/Proyecto_spring_6)
-2.  Instala las dependencias: `pip install pandas numpy matplotlib seaborn scipy jupyter`
-3.  Ejecuta el archivo `proyecto6.ipynb` en Jupyter Notebook.
+1.  Clone this repository to your local machine.
+    ```bash
+    git clone (https://github.com/ferchi4/Proyecto_spring_6)
+    ```
+    *(Note: Ensure you replace the URL with your actual repository URL).*
+
+2.  Ensure you have the necessary dependencies installed:
+    ```bash
+    pip install pandas numpy matplotlib seaborn scipy jupyter
+    ```
+
+3.  Place the CSV files (`games.csv`) in the same directory as the notebook.
+
+4.  Open and run the `proyecto10.ipynb` file in Jupyter Notebook.
+    ```bash
+    jupyter notebook proyecto10.ipynb
+    ```
+
