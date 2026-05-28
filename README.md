@@ -61,8 +61,8 @@ The dataset (`games.csv`) contains information on more than 16,000 video games r
 
 3.  Place the CSV files (`games.csv`) in the same directory as the notebook.
 
-4.  Open and run the `proyecto10.ipynb` file in Jupyter Notebook.
+4.  Open and run the `proyecto6.ipynb` file in Jupyter Notebook.
     ```bash
-    jupyter notebook proyecto10.ipynb
+    jupyter notebook proyecto6.ipynb
     ```
 
